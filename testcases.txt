@@ -1,0 +1,327 @@
+
+
+
+INPUTS
+EXPECTED OUTPUTS
+"hello how are you"
+Word: hello
+Word: how
+Word: are
+Word: you
+
+“123sheep”
+Decimal Integer: 123
+word:sheep
+
+
+"array[xyz ] += pi 3.14159e-10"
+word: "array"
+left bracket: "["
+word: "xyz"
+right bracket: "]"
+plus equals: "+="
+word: "pi"
+float: "3.141519e-10"
+
+
+"0Xaeefang 066666 -109 -0xaee"
+hexadecimal integer: 0Xaeefa
+word: ng
+Octal: 066666
+minus operator: '-'
+decimal integer: 109
+minus operator: '-'
+hexadecimal integer: 0xaee
+
+
+"3.1 03.1 x3.1 0x3.1 30x1.x"
+floating point: "3.1"
+floating point: "03.1"
+word: "x3"
+structure member: "."
+decimal integer: "1"
+hexadecimal integer: "0x3"
+structure member: "."
+decimal integer: "1"
+decimal integer: "30"
+word: "x1"
+structure member: "x"
+word: "x"
+
+
+" ? : == != < >"
+conditional true “?”
+conditional false “:”
+equality test “==”
+inequality test “!=”
+less than test “<”
+greater than test “>”
+
+
+
+
+
+
+
+" () [] . -> , "
+Left parenthesis “(“
+Right parenthesis “)”
+Left bracket “[“
+Right bracket “]
+Structure member “.”
+Structure pointer “->”
+Comma “,””
+
+
+"! ~ >> << ^ |"
+Negate: “!”
+1s complement:  “~”
+Shift right: “>>”
+Shift left “<<”
+Bitwise XOR “^”
+Bitwise OR “|”
+
+
+
+“123.452.55”
+Float: 123.452
+structure member: '.'
+decimal integer: 55
+
+
+
+
+“sizeof abcdsizeof sizeofapplepie”
+word: abcdsizeof
+word: sizeofapplepie
+
+
+“sizeof //-> array.name”
+sizeof:"sizeof"
+division:"/"
+division:"/"
+structure pointer:"->"
+word:"array"
+structure member:"."
+word:"name"
+“&&&& |||| |=&==”
+logical AND:"&&"
+logical AND:"&&"
+logical OR:"||"
+logical OR:"||"
+bitwise OR equals:"|="
+bitwise AND equals:"&="
+assignment:"="
+“Ryan>><<s>(the))**?Dog”
+WORD:Ryan
+shift right: >>
+shift left: <<
+WORD:s
+greater than test: >
+left parenthesis: (
+WORD:the
+right parenthesis: )
+right parenthesis: )
+multiply/dereference operator *
+multiply/dereference operator *
+conditional true ?
+WORD:Dog
+
+
+“(+ x2 ( + ( quote x ) foo still a string 323)  now it's a comment!”
+left parenthesis: (
+addition: +
+WORD:x2
+left parenthesis: (
+addition: +
+left parenthesis: (
+WORD:quote
+WORD:x
+right parenthesis: )
+WORD:foo
+WORD:still
+WORD:a
+WORD:string
+DECIMAL INTEGER 323
+right parenthesis: )
+WORD:now
+WORD:it
+WORD:s
+WORD:a
+WORD:comment
+bitwise XOR !
+
+
+“<letter> | ! | | %= | & | * | / | : | < | = | > | ? | ~ | _ | ^”
+less than test: <
+WORD:letter
+greater than test: >
+bitwise OR |
+bitwise XOR !
+bitwise OR |
+bitwise OR |
+bitwise OR |
+AND/address operator &
+bitwise OR |
+multiply/dereference operator *
+bitwise OR |
+bitwise OR |
+conditional false ;
+bitwise OR |
+less than test: <
+bitwise OR |
+assignment =
+bitwise OR |
+greater than test: >
+bitwise OR |
+conditional true ?
+bitwise OR |
+1s complement ~
+bitwise OR |
+bitwise OR |
+bitwise XOR ^
+
+
+“<initial> | <digit> | . | + | -”
+less than test: <
+WORD:initial
+greater than test: >
+bitwise OR |
+less than test: <
+WORD:digit
+greater than test: >
+bitwise OR |
+structure member: .
+bitwise OR |
+addition: +
+bitwise OR |
+minus/subtract operator: -
+
+
+“((()()(()))>>><<<>==><>QMOPAQIONUON”
+left parenthesis: (
+left parenthesis: (
+left parenthesis: (
+right parenthesis: )
+left parenthesis: (
+right parenthesis: )
+left parenthesis: (
+left parenthesis: (
+right parenthesis: )
+right parenthesis: )
+right parenthesis: )
+shift right: >>
+greater than test: >
+shift left: <<
+less than test: <
+greater than or equal test: >=
+assignment =
+greater than test: >
+less than test: <
+greater than test: >
+WORD:QMOPAQIONUON
+
+
+“&=*=-=:?”
+bitwise AND equals &=
+multiply/dereference operator *
+assignment =
+minus equals: -=
+conditional false ;
+conditional true ?
+
+
+“cat tokenizer-test.input.XX | ./tokenizer | diff token-test.output.XX” -
+WORD:cat
+WORD:tokenizer
+minus/subtract operator: -
+WORD:test
+structure member: .
+WORD:input
+structure member: .
+WORD:XX
+bitwise OR |
+structure member: .
+WORD:tokenizer
+bitwise OR |
+WORD:diff
+WORD:token
+minus/subtract operator: -
+WORD:test
+structure member: .
+WORD:output
+structure member: .
+WORD:XX
+minus/subtract operator: -
+
+
+“=assignment +=plus equals -=minus equals *=times equals /=divide equals %=mod equals >>=shift right equals <<=shift left equals &=bitwise AND equals ^=bitwise XOR equals |=bitwise OR equals &AND/address operator -minus/subtract operator *”
+assignment =
+WORD:assignment
+plus equals: +=
+WORD:plus
+WORD:equals
+minus equals: -=
+WORD:minus
+WORD:equals
+multiply/dereference operator *
+assignment =
+WORD:times
+WORD:equals
+assignment =
+WORD:divide
+WORD:equals
+mod equals %=assignment =
+WORD:mod
+WORD:equals
+shift right: >>
+assignment =
+WORD:shift
+WORD:right
+WORD:equals
+shift left equals: <<=
+WORD:shift
+WORD:left
+WORD:equals
+bitwise AND equals &=
+WORD:bitwise
+WORD:AND
+WORD:equals
+bitwise XOR ^
+assignment =
+WORD:bitwise
+WORD:XOR
+WORD:equals
+bitwise OR equals: |=
+WORD:bitwise
+WORD:OR
+WORD:equals
+AND/address operator &
+WORD:AND
+WORD:address
+WORD:operatornt
+minus/subtract operator: -
+WORD:minus
+WORD:subtractnt
+WORD:operatornt
+multiply/dereference operator *
+
+
+“(strip_handles=True) # Simple”
+left parenthesis: (
+WORD:strip
+WORD:handles
+assignment =
+WORD:True
+right parenthesis: )
+WORD:Simple
+
+"Wrong" "Number" "Args"
+4 Incorrect amount of arguments
+
+
+
+
+
+
+
