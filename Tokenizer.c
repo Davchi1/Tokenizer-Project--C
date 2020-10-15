@@ -73,7 +73,7 @@ int getHexidecimalToken(char*temp,int start){
     free(hexToken);
     return count;
 }
- int DoubleGanger;
+//Prints out a floating decimal token
  int getFloatingdecimalToken(char*temp,int start){
     _Bool anothaONE = 1;
     int x = start;
@@ -102,6 +102,7 @@ int getHexidecimalToken(char*temp,int start){
     
     return count;
  }
+//Prints out an octal integer token
  int getOctalInteger(char* temp, int start){
      int x = start;
      int count = 0;
@@ -124,6 +125,7 @@ int getHexidecimalToken(char*temp,int start){
      free(octalToken);
      return count;
  }
+//Prints out a decimal integer
  int getDecimalInteger(char* temp, int start){
      int x = start;
      int count = 0;
@@ -160,7 +162,7 @@ int main(int argc, char* argv[])
        if(isdigit(str[i])){
            
            
-           //1.1234234 56123432
+           
            //Look for a floating point
            if(i!=strlen(str)-1&&(str[i+1]=='.')){
             i+= getFloatingdecimalToken(str,i);
@@ -181,7 +183,7 @@ int main(int argc, char* argv[])
            }
 
        }
-       //Look for a ward
+       //Look for a word
         if(isalpha(str[i])){
            i+=getWordToken(str,i);   
          //  printf("index %d\n",i);   
@@ -446,8 +448,5 @@ int main(int argc, char* argv[])
 
      
    }
-
-   int iter = 0;
-   int tempiter = 0;
    return 0;
 }
