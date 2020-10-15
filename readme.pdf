@@ -1,0 +1,16 @@
+This program is a string Tokenizer that takes in a single string of characters of an arbitrary length and breaks them
+up into types of inputs. 
+
+There are several types of tokens:
+A word token consists of an alphabetic character followed by any number of alphanumeric
+characters. Some word tokens are “hi” “stufF” “ThinGs” “a1231” “C0MP14IN”
+A decimal integer is a digit character followed by any number of digit characters: “12” “8” “2”
+An octal integer is a '0' character followed by any number of octal digits (0-7).
+A hexadecimal integer is “0x” (or “0X”) followed by any number of hexadecimal digits (0-9, af, A-F).
+A floating point token is a decimal integer that has a '.' at any position other than the last. It may
+optionally contain an exponent in scientific notation at the end, for example: “3.14159e-10”
+Aditionally, C operators are read as tokens aswell. 
+
+This program reads in the string from left two right and has helper functions to identify the type of token we want to print out. For the C operators a switch statement
+containing all of the 45 operators is used instead of a helper function.
+
