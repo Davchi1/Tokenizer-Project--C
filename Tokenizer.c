@@ -164,8 +164,6 @@ int main(int argc, char* argv[])
            //Look for a floating point
            if(i!=strlen(str)-1&&(str[i+1]=='.')){
             i+= getFloatingdecimalToken(str,i);
-            printf("%d The doublegnaga",DoubleGanger);
-            i+= DoubleGanger;
            // printf("The new Value of I %d\n",i);
            }
            //Look for a Hexidecimal
