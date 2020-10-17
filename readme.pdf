@@ -12,5 +12,5 @@ optionally contain an exponent in scientific notation at the end, for example: â
 Aditionally, C operators are read as tokens aswell. 
 
 This program reads in the string from left two right and has helper functions to identify the type of token we want to print out. For the C operators a switch statement
-containing all of the 45 operators is used instead of a helper function.
+containing all of the 45 operators used instead of a helper function.
 
