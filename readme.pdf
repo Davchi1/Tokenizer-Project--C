@@ -1,4 +1,4 @@
-This program is a string Tokenizer that takes in a single string of characters of an arbitrary length and breaks them
+This program by David Okechukwu is a string Tokenizer that takes in a single string of characters of an arbitrary length and breaks them
 up into types of inputs. 
 
 There are several types of tokens:
