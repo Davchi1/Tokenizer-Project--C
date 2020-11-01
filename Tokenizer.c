@@ -50,6 +50,7 @@ int getWordToken(char* temp, int start){
 
 
 }
+// Prints out hexideciam Token
 int getHexidecimalToken(char*temp,int start){
     int x = start;
     int count = 0;
@@ -149,6 +150,8 @@ int getHexidecimalToken(char*temp,int start){
      return count;
  }
 
+
+//A call that prints out a token will advance the position of the string we are in by the length of that token.
 int main(int argc, char* argv[])
 {
     int i;
